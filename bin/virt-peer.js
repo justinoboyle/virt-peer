@@ -17,7 +17,7 @@ async function _() {
             for(let source of magnet[dirTitle]) {
                 const { command, args } = config.mounter({source, dir})
                 const child = spawn(command, args)
-                child.stderr.on('data', console.error)
+                child.stderr.on('data', a => console.error(a + ""))
                 children.push(child)
             }
         }
