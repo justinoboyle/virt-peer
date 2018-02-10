@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/justinoboyle/virt-peer.git"
@@ -18,7 +16,12 @@
   },
   "bin": {
     "virt-peer-dir": "bin/virt-peer-dir",
-    "virt-peer-generate": "bin/virt-peer-generate"
+    "virt-peer-generate": "bin/virt-peer-generate",
+    "virt-peer": "bin/virt-peer.js"
   },
-  "homepage": "https://github.com/justinoboyle/virt-peer#readme"
+  "homepage": "https://github.com/justinoboyle/virt-peer#readme",
+  "dependencies": {
+    "md5": "^2.2.1",
+    "torrent-mount": "^1.4.2"
+  }
 }

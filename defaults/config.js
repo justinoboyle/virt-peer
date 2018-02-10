@@ -1,5 +1,7 @@
 const { join } = require('path')
 module.exports = async() => ({
-    apiPort: 3000,
-    rootMountPoint: join(__dirname, './data')
+    mountPoint: join(__dirname, './data'),
+    mounter: ({ source, dir }) => {
+        return { command: 'torrent-mount', args: [source, '-m', dir]}
+    } 
 })
