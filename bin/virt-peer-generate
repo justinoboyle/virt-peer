@@ -1,5 +1,8 @@
 #!/bin/bash
-DIR=$(npm root virt-peer)/..
+DIR=$(npm root)
+cd virt-peer
 cd $DIR
+cd .. 
+cd defaults
 CFG=$(./virt-peer-dir)
-cp -irv $DIR/defaults/* $CFG/
+cp -irv * $CFG/
