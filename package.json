@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/justinoboyle/virt-peer/issues"
   },
+  "bin": {
+    "virt-peer-dir": "bin/virt-peer-dir",
+    "virt-peer-generate": "bin/virt-peer-generate"
+  },
   "homepage": "https://github.com/justinoboyle/virt-peer#readme"
 }
