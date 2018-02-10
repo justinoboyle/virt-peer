@@ -2,7 +2,6 @@
 DIR=$(npm root -g)
 cd $DIR
 cd virt-peer
-cd .. 
 cd defaults
 CFG=$(./virt-peer-dir)
 cp -irv * $CFG/
