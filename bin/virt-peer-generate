@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR=$(npm root virt-peer)/..
 cd $DIR
 CFG=$(./virt-peer-dir)
-cp -irv $DIR/../defaults/* $CFG/
+cp -irv $DIR/defaults/* $CFG/

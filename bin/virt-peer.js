@@ -15,7 +15,8 @@ async function _() {
         for(let dirTitle in magnet) {
             const dir = join(mountPoint, dirTitle)
             for(let source of magnet[dirTitle]) {
-                const child = spawn(`torrent-mount`, [source, '-m', dir])
+                const { command, args } = config.mounter({source, dir})
+                const child = spawn(command, args)
                 child.stderr.on('data', console.error)
                 children.push(child)
             }
