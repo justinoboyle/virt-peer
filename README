@@ -1,0 +1,25 @@
+virt-peer: organize your digital p2p library
+
+** this product is covered under no warranty, and should only be used for legal purposes **
+this has not been tested for, nor will it likely work under Windows.
+
+first, install torrent-mount and virt-peer globally, **make sure you have FUSE installed!**:
+npm install -g torrent-mount virt-peer
+(technically, you should only have to install virt-peer as it's in the dependencies, but sometimes the PATH isn't updated correctly, so just install both)
+
+the user that runs the virt-peer package will be the one creating FUSE mount points - use this appropriately. you might have to set allow_other in your FUSE config file.
+
+*** 
+run virt-peer-generate to create configuration files.
+you can customize the location where this is stored with the environment variable VIRTPEER.
+
+go to the directory:
+
+cd $(virt-peer-dir)
+
+edit the configuration files to your liking. dump your magnet links into magnet.js. remember the function is async! :)
+
+run the server with virt-peer. if you want, you can run it with something like pm2 for it to be permanent.
+***
+
+this documentation will become much better eventually
